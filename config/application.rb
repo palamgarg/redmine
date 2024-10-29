@@ -102,7 +102,7 @@ module RedmineApp
     config.session_store(
       :cookie_store,
       :key => '_redmine_session',
-      :path => config.relative_url_root || '/',
+      :path => config.relative_url_root || '/redmine',
       :same_site => :lax
     )
 
