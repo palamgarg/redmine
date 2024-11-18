@@ -22,7 +22,7 @@ Rails.application.routes.draw do
 
   match 'login', :to => 'account#login', :as => 'signin', :via => [:get, :post]
   match 'logout', :to => 'account#logout', :as => 'signout', :via => [:get, :post]
-  match 'account/twofa/confirm', :to => 'account#twofa_confirm', :via => :get
+  match 'redmine/account/twofa/confirm', :to => 'account#twofa_confirm', :via => :get
   match 'account/twofa/resend', :to => 'account#twofa_resend', :via => :post
   match 'account/twofa', :to => 'account#twofa', :via => [:get, :post]
   match 'account/register', :to => 'account#register', :via => [:get, :post], :as => 'register'

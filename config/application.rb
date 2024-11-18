@@ -87,7 +87,7 @@ module RedmineApp
     # See http://guides.rubyonrails.org/caching_with_rails.html#cache-stores
     # for more options (same options as config.cache_store).
     config.redmine_search_cache_store = :memory_store
-
+    config.redmine_relative_url_root = '/redmine'
     # Sets default plugin directory
     config.redmine_plugins_directory = 'plugins'
 

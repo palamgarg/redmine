@@ -44,11 +44,11 @@ test:
 
 # PostgreSQL configuration example
 #production:
-#  adapter: postgresql
-#  database: redmine
-#  host: localhost
-#  username: postgres
-#  password: "postgres"
+  adapter: postgresql
+  database: redmine
+  host: localhost:172.19.0.1:5432
+  username: postgres
+  password: "postgres"
 
 # SQLite3 configuration example
 #production:
