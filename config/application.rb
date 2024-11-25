@@ -90,7 +90,9 @@ module RedmineApp
     config.redmine_relative_url_root = '/redmine'
     # Sets default plugin directory
     config.redmine_plugins_directory = 'plugins'
-
+    
+    config.hosts << "mseva-uat.lgpunjab.gov.in"
+    
     # Paths for plugin and theme assets. Nothing is set here, as the actual
     # configuration is performed in the initializer.
     config.assets.redmine_extension_paths = []

@@ -1,6 +1,23 @@
+development:
+  adapter: <%= ENV['REDMINE_DB_ADAPTER'] || 'postgresql' %>
+  database: <%= ENV['REDMINE_DB_DATABASE'] || 'postgres' %>
+  host: <%= ENV['REDMINE_DB_HOST'] || 'localhost' %>
+  port: <%= ENV['REDMINE_DB_PORT'] || '5432' %>
+  username: <%= ENV['REDMINE_DB_USERNAME'] || 'postgres' %>
+  password: <%= ENV['REDMINE_DB_PASSWORD'] || 'postgres' %>
+
+test:
+  adapter: <%= ENV['REDMINE_DB_ADAPTER'] || 'postgresql' %>
+  database: <%= ENV['REDMINE_DB_DATABASE'] || 'postgres' %>
+  host: <%= ENV['REDMINE_DB_HOST'] || 'localhost' %>
+  port: <%= ENV['REDMINE_DB_PORT'] || '5432' %>
+  username: <%= ENV['REDMINE_DB_USERNAME'] || 'postgres' %>
+  password: <%= ENV['REDMINE_DB_PASSWORD'] || 'postgres' %>
+
 production:
-  adapter: "sqlite3"
-  host: "localhost"
-  username: "redmine"
-  database: "sqlite/redmine.db"
-  encoding: "utf8"
+  adapter: <%= ENV['REDMINE_DB_ADAPTER'] || 'postgresql' %>
+  database: <%= ENV['REDMINE_DB_DATABASE'] || 'postgres' %>
+  host: <%= ENV['REDMINE_DB_HOST'] || 'localhost' %>
+  port: <%= ENV['REDMINE_DB_PORT'] || '5432' %>
+  username: <%= ENV['REDMINE_DB_USERNAME'] || 'postgres' %>
+  password: <%= ENV['REDMINE_DB_PASSWORD'] || 'postgres' %>
